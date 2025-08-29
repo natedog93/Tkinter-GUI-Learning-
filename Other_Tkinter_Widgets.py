@@ -33,7 +33,7 @@ text.focus()
 #Adds some text to begin with.
 text.insert(END, "Example of multi-line text entry.")
 #Get's current value in textbox at line 1, character 0
-print(text.get("1.0", END))
+print(text.get(1.0, END)) #if you enter 1.5, you are getting first line, at index 5 of text = "le ...."
 text.pack()
 
 #Spinbox
@@ -57,7 +57,7 @@ def checkbutton_used():
 #variable to hold on to checked state, 0 is off, 1 is on.
 checked_state = IntVar()
 checkbutton = Checkbutton(text="Is On?", variable=checked_state, command=checkbutton_used)
-checked_state.get()
+# checked_state.get()
 checkbutton.pack()
 
 #Radiobutton
