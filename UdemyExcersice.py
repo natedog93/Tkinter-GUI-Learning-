@@ -25,7 +25,7 @@ Km_label = Label(text="Km", font=("Arial", 18, "bold"))
 farenheight_conversion_label = Label(text="0", font=("Arial", 14, "bold"))
 # assigning grids for all labels
 miles_label.grid(column= 2, row= 0, sticky = "w")
-is_equal_to_label.grid(column= 0, row=1, sticky = "e") #top left corner
+is_equal_to_label.grid(column= 0, row=1, padx = 5, sticky = "e") #top left corner
 Km_label.grid(column= 2, row = 1, padx= 2, sticky = "w")
 farenheight_conversion_label.grid(column = 1, row = 1, sticky = "e")
 
